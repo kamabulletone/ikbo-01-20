@@ -8,9 +8,13 @@ public class Hand extends Human{
         this.numOfFingers = numOfFingers;
     }
     public void turnLeft() {
-        System.out.println(name + "turned left");
+        System.out.println(name + " turned left");
     }
     public void turnRight() {
-        System.out.println(name + "turned right");
+        System.out.println(name + " turned right");
+    }
+    public String toString() {
+        return "Hand information: Human part: " + name + "; Skin Color " + getSkinColor() + "; Number of fingers: " +
+                + numOfFingers;
     }
 }

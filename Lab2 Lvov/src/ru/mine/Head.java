@@ -23,4 +23,8 @@ public class Head extends Human {
     public void setFaceForm(String faceForm) {
         this.faceForm = faceForm;
     }
+    public String toString() {
+        return "Head information: Human part: " + name + "; Skin Color " + getSkinColor() + "; Hair color:" + hairColor +
+                "; FaceForm: "+ faceForm;
+    }
 }

@@ -37,4 +37,8 @@ public class Human {
         this.skinColor = skinColor;
     }
 
+    public String toString() {
+        return "Human information: Human name: " + name + "; Skin Color " + getSkinColor() + "; Age:" + age;
+    }
+
 }

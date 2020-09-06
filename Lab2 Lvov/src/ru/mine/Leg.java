@@ -14,4 +14,8 @@ public class Leg extends Human{
     public void bendKnees() {
         System.out.println(name + "bend it's knee");
     }
+
+    public String toString() {
+        return "Leg information: Human part: " + name + "; Skin Color " + getSkinColor() + "; Leg length: " + legLength;
+    }
 }
