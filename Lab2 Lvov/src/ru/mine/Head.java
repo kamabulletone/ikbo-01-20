@@ -1,11 +1,12 @@
 package ru.mine;
 
-public class Head extends Human {
+public class Head  {
+    private String name;
     private String hairColor;
     private String faceForm;
 
-    public Head(String name, String skinColor, String faceForm,String hairColor) {
-        super(name,skinColor);
+    public Head(String name, String faceForm,String hairColor) {
+
         this.faceForm = faceForm;
         this.hairColor = hairColor;
     }
@@ -24,7 +25,7 @@ public class Head extends Human {
         this.faceForm = faceForm;
     }
     public String toString() {
-        return "Head information: Human part: " + name + "; Skin Color " + getSkinColor() + "; Hair color:" + hairColor +
+        return "Head information: Human part: " + name + "; Hair color:" + hairColor +
                 "; FaceForm: "+ faceForm;
     }
 }

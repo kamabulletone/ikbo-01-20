@@ -1,10 +1,10 @@
 package ru.mine;
 
-public class Hand extends Human{
+public class Hand {
+    private String name;
     private int numOfFingers;
 
-    public Hand(String name, String skinColor, int numOfFingers) {
-        super(name,skinColor);
+    public Hand(String name, int numOfFingers) {
         this.numOfFingers = numOfFingers;
     }
     public void turnLeft() {
@@ -14,7 +14,7 @@ public class Hand extends Human{
         System.out.println(name + " turned right");
     }
     public String toString() {
-        return "Hand information: Human part: " + name + "; Skin Color " + getSkinColor() + "; Number of fingers: " +
+        return "Hand information: Human part: " + name + "; Number of fingers: " +
                 + numOfFingers;
     }
 }

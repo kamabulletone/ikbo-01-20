@@ -1,10 +1,11 @@
 package ru.mine;
 
-public class Leg extends Human{
+public class Leg {
+    private String name;
     private int legLength;
 
-    public Leg(String name, String skinColor, int legLength) {
-        super(name,skinColor);
+    public Leg(String name, int legLength) {
+        this.name = name;
         this.legLength = legLength;
     }
 
@@ -16,6 +17,6 @@ public class Leg extends Human{
     }
 
     public String toString() {
-        return "Leg information: Human part: " + name + "; Skin Color " + getSkinColor() + "; Leg length: " + legLength;
+        return "Leg information: Human part: " + name + "; Leg length: " + legLength;
     }
 }
