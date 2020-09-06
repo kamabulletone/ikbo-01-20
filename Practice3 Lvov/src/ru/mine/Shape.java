@@ -4,7 +4,8 @@ public abstract class Shape {
     protected String color;
     protected boolean filled;
 
-    public void Shape() {}
+    public void Shape() {
+    }
 
     public void Shape(String color, boolean filled) {
         this.color = color;
