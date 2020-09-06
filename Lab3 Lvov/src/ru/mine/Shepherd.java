@@ -1,17 +1,18 @@
 package ru.mine;
 
-public class Husky extends Dog {
+public class Shepherd extends Dog {
     private String breed = "Siberian Husky";
     private String earForm;
 
 
 
 
-    public Husky(String name, int age) {
+    public Shepherd(String name, int age) {
         super(name,age);
         earForm = "Стоячие уши(естественное положение)";
-        furColor = "все цвета от черного до белоснежного";
-        height = "в среднем 55 см";
+        furColor = "допустимы большинство цветов, кроме белого";
+        height = "в среднем 60 см";
+
 
 
 
@@ -24,6 +25,6 @@ public class Husky extends Dog {
     }
 
     public String getBreed() {
-        return "Сибирский хаски";
+        return "Овчарка";
     }
 }

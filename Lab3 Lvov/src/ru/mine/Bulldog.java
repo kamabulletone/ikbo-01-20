@@ -17,13 +17,13 @@ public class Bulldog extends Dog {
     }
 
     public String toString() {
-        return "Информация о собаке: Кличка: " + getName() + "; Возраст: " + getAge()
-                + "; Цвет шерсти: " + getFurColor() + "; Средний рост: " + getHeight() + "\n Особенности: " + neckThickness +
-                " " + foldQuantity + getBreed();
+        return "Информация о собаке: \nКличка: " + getName() + "; \nВозраст: " + getAge()
+                + "; \nЦвет шерсти: " + getFurColor() + "; \nСредний рост: " + getHeight() + "\nОсобенности: " + neckThickness +
+                ", " + foldQuantity + ", " + getBreed();
     }
 
     public String getBreed() {
-        return "Bulldog";
+        return "Бульдог";
     }
 
 
