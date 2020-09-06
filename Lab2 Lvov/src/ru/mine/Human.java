@@ -3,7 +3,7 @@ package ru.mine;
 public class Human {
     private String skinColor;
     private int age;
-    private String name;
+    protected String name;
 
     public Human(String name, String skinColor) {
         this.name=name;
