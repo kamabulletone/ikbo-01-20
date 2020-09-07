@@ -1,6 +1,6 @@
 package ru.mine;
 
-public class Main {
+public class TestDog {
 
     public static void main(String[] args) {
         Bulldog dog = new Bulldog("Шарик", 8);
