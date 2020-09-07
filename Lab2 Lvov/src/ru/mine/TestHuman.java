@@ -1,6 +1,6 @@
 package ru.mine;
 
-public class Main {
+public class TestHuman {
 
     public static void main(String[] args) {
 	Human sam = new Human("Sam", "white", 20);
