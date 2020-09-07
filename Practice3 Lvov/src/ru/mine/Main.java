@@ -64,5 +64,31 @@ public class Main {
         System.out.println(sq1.getSide());
         System.out.println(sq1.getLength());
 
+        MovableRectangle rect;
+        rect = new MovableRectangle(5,10,-5,10,3,3);
+        if (rect.speedIsEqual()) {
+            System.out.println(rect);
+            rect.moveRight();
+            rect.moveDown();
+            System.out.println(rect);
+        }
+        else System.out.println("Скорости не равны => прямоугольник сломается\n");
+
+        MovableCircle cir = new MovableCircle(10,15,-2,5,8);
+        System.out.println(cir);
+        cir.moveLeft();
+        cir.moveUp();
+        System.out.println(cir);
+
+        MovablePoint p = new MovablePoint(0,5,4,0);
+        System.out.println(p);
+        p.moveDown();
+        p.moveRight();
+        System.out.println(p);
+
+
+
+
+
     }
 }
