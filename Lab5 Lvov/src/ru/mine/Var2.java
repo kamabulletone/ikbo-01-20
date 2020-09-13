@@ -1,18 +1,10 @@
 package ru.mine;
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
-import javax.imageio.ImageIO;
-import javax.swing.*;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 
-public class Main extends JFrame{
-    Main(String args) {
+public class Var2 extends JFrame{
+    Var2(String args) {
         JLabel background;
         setSize(350,394);
         setLayout(null);
@@ -29,7 +21,7 @@ public class Main extends JFrame{
     }
 
     public static void main(String[] args) throws IOException {
-        new Main(args[0]);
+        new Var2(args[0]);
 
 //
 //        BufferedImage myPicture = ImageIO.read(new File("shark.png"));
