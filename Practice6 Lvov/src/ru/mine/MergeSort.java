@@ -1,12 +1,14 @@
 package ru.mine;
 
 import java.lang.reflect.Array;
+import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 
 public class MergeSort {
 
 
-    public static Student [] sortArray(Student[] arrayA, Comparator<Student> comp){ // сортировка Массива который передается в функцию
+    public static Comparable[] sortArray(Comparable[] arrayA, Comparator comp){ // сортировка Массива который передается в функцию
         // проверяем не нулевой ли он?
         if (arrayA == null) {
             return null;
@@ -16,11 +18,11 @@ public class MergeSort {
             return arrayA; // возврат в рекурсию в строки ниже см комменты.
         }
         // копируем левую часть от начала до середины
-        Student [] arrayB = new Student[arrayA.length / 2];
+        Comparable [] arrayB = new Comparable[arrayA.length / 2];
         System.arraycopy(arrayA, 0, arrayB, 0, arrayA.length / 2);
 
         // копируем правую часть от середины до конца массива, вычитаем из длины первую часть
-        Student [] arrayC = new Student[arrayA.length - arrayA.length / 2];
+        Comparable [] arrayC = new Comparable[arrayA.length - arrayA.length / 2];
         System.arraycopy(arrayA, arrayA.length / 2, arrayC, 0, arrayA.length - arrayA.length / 2);
 
         // рекурсией закидываем поделенные обе части обратно в наш метод, он будет крутится до тех пор,
@@ -33,9 +35,9 @@ public class MergeSort {
         return mergeArray(arrayB, arrayC, comp);
     }
 
-    public static Student[] mergeArray(Student[] arrayА, Student[] arrayB, Comparator<Student> comp) {
+    public static Comparable[] mergeArray(Comparable[] arrayА, Comparable[] arrayB, Comparator comp) {
 
-        Student[] arrayC = new Student[arrayА.length + arrayB.length];
+        Comparable[] arrayC = new Comparable[arrayА.length + arrayB.length];
         int positionA = 0, positionB = 0;
 
         for (int i = 0; i < arrayC.length; i++) {
@@ -67,9 +69,11 @@ public class MergeSort {
     public static void main(String[] args) {
         SortingStudentsByGPA comp = new SortingStudentsByGPA();
         Student[] arr1 = new Student[6];
+
         Student st1 = new Student(523,2);
         Student st2 = new Student(323,3);
         Student st3 = new Student(400,5);
+        
 
         //Student[] arr2 = new Student[3];
         Student st4 = new Student(601,1);
@@ -81,15 +85,16 @@ public class MergeSort {
         arr1[3] = st4;
         arr1[4] = st5;
         arr1[5] = st6;
-        arr1 = sortArray(arr1,comp);
+        Comparable[] res = sortArray(arr1,comp);
+
         for (int i = 0; i < arr1.length; i++) {
-            System.out.println("Student's iD: " + arr1[i].getiDNumber() + " Mark: " + arr1[i].getGrade());
+            System.out.println("Student's iD: " + ((Student)res[i]).getiDNumber() + " Mark: " + ((Student)res[i]).getGrade());
         }
         //arr2 = sortArray(arr2, comp);
 //        Comparable[] res = mergeArray(arr1,arr2, comp);
 //        for (Comparable a: res
 //             ) {
-//            System.out.println( ((Student)a).getGrade());
+//            System.out.println( ((Comparable)a).getGrade());
 //
 //        }
 
