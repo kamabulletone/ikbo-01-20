@@ -1,7 +1,7 @@
 package ru.mine;
 import javax.swing.*;
 
-import java.io.IOException;
+
 
 public class Var2 extends JFrame{
     Var2(String args) {
@@ -20,7 +20,7 @@ public class Var2 extends JFrame{
 
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         new Var2(args[0]);
 
 //
