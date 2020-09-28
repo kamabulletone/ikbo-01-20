@@ -52,8 +52,8 @@ public class Task4 {
 
 
     public static void main(String[] args) {
-        String dirPath = "D:\\JAVA UNIVERSITY\\ikbo-01-20";
-        String filePath = "D:\\JAVA UNIVERSITY\\ikbo-01-20\\result.txt";
+        String dirPath = "D:\\JAVA UNIVERSITY\\ikbo-01-20"; // указать путь к читаемому каталогу
+        String filePath = "..\\result.txt"; // путь к файлу в который запишеться результат
 
         Task4 a = new Task4(dirPath);
         try {
