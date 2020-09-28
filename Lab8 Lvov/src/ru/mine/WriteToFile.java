@@ -25,7 +25,7 @@ public class WriteToFile {
         //FileReader reader = new FileReader("src/file/text.txt");
         Scanner scan = new Scanner(System.in);
         try {
-            FileWriter writer = new FileWriter("D:\\JAVA UNIVERSITY\\ikbo-01-20\\lab8test.txt", false);
+            FileWriter writer = new FileWriter("..\\lab8test.txt", false);
             String s = scan.nextLine();
             while (!s.equals("exit")) {
                 writer.write(s);
