@@ -7,7 +7,7 @@ public class LabClassDriver implements LabClassUI{
     private ArrayList<Student> arr;
 
     @Override
-    public Student findStudent(String firstName, String lastName, String secondName) throws StudentNotFoundException {
+    public Student findStudent(String firstName, String secondName, String lastName) throws StudentNotFoundException {
         for (Student st : arr) {
             if (st.getFirstName().equals(firstName) &&
                 st.getLastName().equals(lastName) &&
